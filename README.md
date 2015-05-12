@@ -1,10 +1,10 @@
 # Custom Player Loadout
 ###Installation Notes:###
 1. Copy the following files into the root of your mission file:
-*StartingLoadout.sqf
-*onPlayerRespawn.sqf (if you already have one, merge them)
-*Admin.sqf
-*Donator.sqf
+ 	* **StartingLoadout.sqf**
+	* **onPlayerRespawn.sqf** (if you already have one, merge them)
+	* **Admin.sqf**
+	* **Donator.sqf**
 2. Open your init.sqf and add the following code:
 ```
 if(isNil "admin_list") then
