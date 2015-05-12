@@ -1,2 +1,2 @@
-admin_list = ["76561197993787788","76561198018974301","76561198007991638"];
+admin_list = ["76xxx","76xxx"];
 publicVariable "admin_list"; 
