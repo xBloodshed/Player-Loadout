@@ -3,7 +3,7 @@
 1. Copy the following files into the root of your Arma server:
 	* **onPlayerRespawn.sqf** (if you already have one, merge them)
 	* **Admin.sqf**
-	* **Donator.sqf**
+	* **Donar.sqf**
 2. Copy the following file into the root of your mission file:
  	* **StartingLoadout.sqf**
 3. Open your init.sqf and add the following code:
@@ -12,9 +12,9 @@ if(isNil "admin_list") then
 {
   [] execVM "admin.sqf";	
 };
-if(isNil "donator_list") then
+if(isNil "donar_list") then
 {
-  [] execVM "donator.sqf";	
+  [] execVM "donar.sqf";	
 };
 ```
 4. Open your mission.sqm file and add the following code after the Groups section:
