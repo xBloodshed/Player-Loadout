@@ -1,11 +1,12 @@
 # Custom Player Loadout
 ###Installation Notes:###
-1. Copy the following files into the root of your mission file:
- 	* **StartingLoadout.sqf**
+1. Copy the following files into the root of your Arma server:
 	* **onPlayerRespawn.sqf** (if you already have one, merge them)
 	* **Admin.sqf**
 	* **Donator.sqf**
-2. Open your init.sqf and add the following code:
+2. Copy the following file into the root of your mission file:
+ 	* **StartingLoadout.sqf**
+3. Open your init.sqf and add the following code:
 ```
 if(isNil "admin_list") then
 {
@@ -16,7 +17,7 @@ if(isNil "donator_list") then
   [] execVM "donator.sqf";	
 };
 ```
-3. Open your mission.sqm file and add the following code after the Groups section:
+4. Open your mission.sqm file and add the following code after the Groups section:
 ```
 	class Sensors
 	{
@@ -40,3 +41,4 @@ if(isNil "donator_list") then
 		};			
 	};	
 ```
+*If you follow these steps and get errors that the admin and / donator SQF files cannot be found then try moving them into the root of your mission file.*
