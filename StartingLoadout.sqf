@@ -83,7 +83,10 @@ if ((getPlayerUID player) in admin_list) then
 			player addItemToUniform "meatballs_epoch";
 		};
         player addWeapon "MultiGun";
+		player addHandgunItem "Defib_EPOCH"; 
+        player addHandgunItem "EnergyPackLg";
         player addWeapon "launch_RPG32_F";
+		player addSecondaryWeaponItem "RPG32_F";
         player addWeapon "NVG_EPOCH";
         player addWeapon "EpochRadio0";
         player addWeapon "ItemMap";
@@ -92,13 +95,11 @@ if ((getPlayerUID player) in admin_list) then
         player addWeapon "ItemCompass";
         player addWeapon "RangeFinder";
         player addWeapon "H_19_EPOCH";
-        player addItemToVest "Repair_EPOCH";
         player addItemToVest "Defib_EPOCH";
         player addItemToVest "Heal_EPOCH";
         player addItemToVest "optic_Nightstalker";
         player addItemToBackpack "RPG32_F";
         player addItemToBackpack "RPG32_F";
-        player addItemToBackpack "EnergyPackLg";
         EPOCH_playerEnergy = 2500;
     }
     else
@@ -108,7 +109,7 @@ if ((getPlayerUID player) in admin_list) then
 }
 else
 {
-    if ((getPlayerUID player) in donator_list) then 
+    if ((getPlayerUID player) in donor_list) then 
     {
         if (EPOCH_playerEnergy < 20 && hasInterface && newPlayer) then
         {
