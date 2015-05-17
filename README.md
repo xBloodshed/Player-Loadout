@@ -24,7 +24,7 @@ if(isNil "donor_list") then
 		items=1;	
 		class Item0
 		{
-			position[]={23600.3,0.23,18000.1};
+			position[]={23600.3,0.23,18000.1}; // Altis Clone Chamber
 			a=50;
 			b=50;
 			activationBy="ANY";
