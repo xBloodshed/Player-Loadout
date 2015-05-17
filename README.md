@@ -17,7 +17,7 @@ if(isNil "donor_list") then
   [] execVM "donor.sqf";	
 };
 ```
-4. Open your mission.sqm file and add the following code after the Groups section:
+4. Open your mission.sqm file and add the following code after the Groups section (The default is for Altis, you will need to update it for whatever map you are on):
 ```
 	class Sensors
 	{
