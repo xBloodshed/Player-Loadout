@@ -173,23 +173,26 @@ else
         clearWeaponCargo player;
         clearMagazineCargo player;
         player addWeapon "ItemMap";
+		player addWeapon "Ruger_pistol";
         player addItemToVest "FAK";
         player addItemToVest "FAK";
         player addItemToVest "scam_epoch";
         player addItemToVest "scam_epoch";
         player addItemToVest "ItemSodaRbull";
         player addItemToVest "ItemSodaRbull";
-        EPOCH_playerEnergy = 500;
+        EPOCH_playerEnergy = 100;
   
         _modelMale = (typeOF player == "Epoch_Male_F");
         _modelFemale = (typeOF player == "Epoch_Female_F");
  
         if (_modelFemale) then {
 			player forceAddUniform "U_BasicBodyFemale";
+			player addItemToVest "10rnd_22X44 magazine";
         };
         if (_modelMale) then 
 			{
                 player forceAddUniform "U_C_Poor_1";
+				player addItemToVest "10rnd_22X44 magazine";
             };
         newPlayer = false;
 	}
